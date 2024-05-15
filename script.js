@@ -11,6 +11,16 @@ function Result() {
     // Ambil nilai elemen input dengan ID "inputResult"
     let num1 = document.getElementById("inputResult").value;
     // Evaluasi nilai elemen input sebagai ekspressi JavaScript menggunakan fungsi eval()
+
+    // 
+    num1 = num1.replace(/(\d+(\.\d+)?)%/g, function (match,p1) {
+        return (parseFloat(p1) / 100).toString();
+    }); // /\d+ = matches on or more digits following the decimal point
+    /* ? = group part decimal
+    parseFloat(p1) / 100 = angka di persennya di bagi 100
+    g = global
+
+        */
     let num2 = eval(num1);
     // Atur nilai elemen input menjadi hasil evaluasi
     document.getElementById("inputResult").value = num2;
