@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Playfair Display",serif;
+}
+
+body {
+    background-color: blanchedalmond;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.title {
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    position: absolute;
+    color: black;
+    margin-bottom: 400px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main {
+    margin-top: 50px;
+    width: 400px;
+    height: 450px;
+    background-color: aliceblue;
+    position: absolute;
+    border: 5px solid #590c5d;
+    border-radius: 6px;
+    padding-top: 20px;
+}
+.main input[type="text"] {
+    width: 88%;
+    height: 70px;
+    position: relative;
+    top: 5px;
+    text-align: right;
+    padding: 3px 6px;
+    outline: none;
+    font-size: 40px;
+    border: 5px solid black;
+    display: flex;
+    margin: auto;
+    border-radius: 8px;
+    color: black;
+}
+.btn input[type="button"] {
+    width: 90px;
+    height: 60px;
+    padding: 2px;
+    margin: 2px 0px;
+    position: relative;
+    left: 13px;
+    top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+    background-color: burlywood;
+    color: black;
+    border-radius: 8px;
+}
+.btn input[type="button"]:hover {
+    background-color: black;
+    color: wheat;
+}
+.btn input[value="="] {
+    background-color: #da2c15;
+    font-size: 20px;
+}
+.btn input[value="%"] {
+    background-color: #401077;
+}
+.btn input[value="←"] {
+    background-color: #401077;
+}
+
+@media (max-width: 768px) {
+    .main input[type="text"] {
+        height: 60px;
+        font-size: 30px;
+    }
+
+    .btn input[type="button"] {
+        width: 70px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    #inputResult[type="text"] {
+        width: 88%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main input[type="text"] {
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .btn input[type="button"] {
+        width: 60px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
