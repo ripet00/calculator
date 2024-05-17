@@ -90,16 +90,16 @@ body {
     }
 
     .btn input[type="button"] {
-        width: 80px;
+        width: 50px;
         height: 40px;
-        font-size: 14px;
+        font-size: 8px;
     }
     #inputResult[type="text"] {
         width: 88%;
     }
 }
 
-@media (max-width: 854px) {
+@media (min-width: 854px) {
     .main {
         width: 90%;
         height: 70%;
